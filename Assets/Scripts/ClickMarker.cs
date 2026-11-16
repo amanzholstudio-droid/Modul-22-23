@@ -8,8 +8,8 @@ public class ClickMarker : MonoBehaviour
 
     public void ShowAt(Vector3 point)
     {
-        _marker.SetActive(true);
         Vector3 markerPosition = new Vector3(point.x, point.y + YHeight, point.z);
         _marker.transform.position = markerPosition;
+        _marker.SetActive(true);
     }
 }
